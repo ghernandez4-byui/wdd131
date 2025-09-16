@@ -124,13 +124,13 @@ main {
 }
 
 h1 {
-    font-size: 40pt;
+    font-size: 60pt;
     margin-bottom: 30px;
     text-align: center;
 }
 
 h2 {
-    color: var(--accent1-color);
+    font-family: var(--body-font);
     font-size: 20pt;
 
 }
