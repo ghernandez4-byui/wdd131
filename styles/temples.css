@@ -13,7 +13,7 @@
 	box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, .header div {
     font-family: var(--main-font);
     text-align: center;
     color: var(--primary-color);
@@ -35,9 +35,10 @@ header {
     height: auto;
 }
 
-h2 {
+.header div {
     display: flex;
     font-size: 30pt;
+    margin-left: 30px;
 }
 
 .menu {
@@ -116,6 +117,11 @@ main {
     align-items: center;
     padding: 20px;
 }
+.main-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 h1 {
     font-size: 40pt;
@@ -123,6 +129,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: var(--accent1-color);
+    font-size: 20pt;
+
+}
 main figure {
     display: grid;
     grid-template-rows: 1fr;
