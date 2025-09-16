@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Personal Homepage</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Gilmarie Hernandez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Gilmarie Hernandez | Home Page">
+    <meta name="author" content="Gilmarie Hernandez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Englebert&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
-<body>
-    <h1>Welcome to WDD 130.</h1>
-    <p>This page will become your homepage for the course. You will remove this text and replace it with your own personal details.</p>
 
-    <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
+<body>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/gilmarie-hernandez-6a1552266">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Gilmarie Hernandez</h1>
+        <div>
+            <section class="card">
+                <h2>About Me</h2>
+                <p>My name is Gilmarie pronounced Jeel-mAh-rree but everyone calls me Gil (Jil). My family is from
+                    Puerto Rico but I currently live in North Carolina with my 3 year old daughter, Emerita. I love to
+                    dance
+                    and sing. Although I'm not very good at the singing part, you WILL catch me belting it out in my car
+                    whenever I'm driving somewhere. And have now past that on to my daughter, so you can catch us both
+                    singing at the top of our lungs. Currently, it's the songs in <i>K-Pop Demon Hunters</i>... on
+                    repeat! <br>We love movies, especially going to the theatre together. She gets her little kids combo
+                    and I get my kettle corn. She definitely takes after me, especially her sass!</p>
+                <img src="images/selfie.jpg" alt="Emmie and me">
+            </section>
+            <section class="card">
+                <h3>North Carolina, USA</h3>
+                <img src="images/flag.jpg" alt="NC flag">
+                <p>North Carolina is the 12th state of the United States. It is known for having the first successful
+                    man powered flight, which took place near the city of Kitty Hawk in 1903. North Carolina is also
+                    known for it's beautfil landscapes. The mountains have more than 300 waterfalls and the beaches are
+                    one of the most popular ones to visit during summer.</p>
+            </section>
+        </div>
+        <aside>
+            <h2>Web Dev Tools</h2>
+            <nav>
+                <ul class="aside-nav">
+                    <li><a href="#">Dev. to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Image Placeholder</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Gilmarie Hernandez | North Carolina</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

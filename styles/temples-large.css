@@ -1,0 +1,35 @@
+@media screen and (min-width: 500px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    h1 {
+        grid-column: 1/4;
+    }
+    main figure img {
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+    h2 {
+        margin-left: 40px;
+    }
+
+    .menu {
+        display: flex;
+		flex-direction: row;
+        margin-right: 60px;
+        width: auto;
+        position: static
+	}
+
+    #hamburger {
+        display: none;
+    }
+}
