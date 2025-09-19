@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - San Juan</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Gilmarie Hernandez | San Juan Page">
+    <meta name="author" content="Gilmarie Hernandez">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-medium.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Puerto Rico</h1>
+    </header>
+    <main>
+        <blockquote class="block-color"></blockquote>
+        <div class="hero-div">
+            <picture class="hero-container">
+                <source media="(min-width:1500px)" srcset="images/sj-hero-wide.webp" id="lg-img">
+                <source media="(min-width:1000px)" srcset="images/sj-hero-medium.webp" id="md-img">
+                <img src="images/sj-hero-small.webp" alt="San Juan" width="500" height="200" id="sm-img">
+            </picture>
+        </div>
+        <blockquote class="block-color-2"></blockquote>
+        <article class="data-heading">
+            <h2>Data</h2>
+        </article>
+        <div class="data-table-container">
+            <table class="data-table">
+                <tr>
+                    <th>Area:</th>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD:</th>
+                    <td>#</td>
+                </tr>
+            </table>
+        </div>
+        <article class="weather-heading">
+            <h2>Weather</h2>
+        </article>
+        <div class="weather-table-container">
+            <table class="weather-table">
+                <tr>
+                    <th>Temperature:</th>
+                    <td id="temperature">45</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td id="windSpeed">10</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td id="windChill">Calculating...</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Gilmarie Hernandez | North Carolina</p>
+            <p id="lastModified"></p>
+        </footer>
+    </main>
+</body>
+
+</html>

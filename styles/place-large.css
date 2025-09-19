@@ -1,0 +1,107 @@
+@media screen and (min-width: 1500px) {
+    :root {
+    --primary-color: #e9b9af;
+    --primary-color-trans: rgba(233, 185, 175, .9);
+    --secondary-color: #704f33;
+    --secondary-color-trans: rgba(112, 79, 51, .6);
+    --accent-color: #4dd1b8;
+    --accent-color-trans: rgba(77, 209, 184, .8);
+    --header-font: 'Island Moments', sans-serif;
+    --body-font: 'Raleway', sans-serif;
+    }
+    header {
+        height: 120px;
+    }
+
+    .block-color-2 {
+        display: none;
+    }
+
+    main {
+        height: auto;
+    }
+    .hero-div  {
+        position: relative;
+        z-index: 1;
+        height: 750px;
+        margin-bottom: 0;
+    }
+    #sm-img {
+        height: 750px;
+        margin-bottom: 0;
+    }
+    .data-heading, .weather-heading {
+        position: absolute;
+        display: flex;
+        z-index: 3;
+        background-color: var(--accent-color-trans);
+        width: 350px;
+        height: 100px;
+        margin-left: 40px;
+    }
+
+    .data-heading {
+        top: 0;
+        margin-top: 190px;
+     }
+
+    .weather-heading {
+        top: 500px;
+        right: 80px;
+    }
+
+    .data-heading h2, .weather-heading h2 {
+        text-align: left;
+        margin-left: 20px;
+        font-size: 50pt;
+    }
+
+    .data-table-container, .weather-table-container {
+        position: absolute;
+        background-color: var(--primary-color-trans);
+        z-index: 2;
+        box-shadow: 0 0 10px 5px var(--secondary-color-trans);
+    }
+    .data-table-container {
+        top: 20px;
+        left: 50px;
+        margin-top: 150px;
+        height: 530px;
+    }
+    .weather-table-container {
+        bottom: 3px;
+        right: 50px;
+        margin-top: 130px;
+    }
+    .data-table  {
+        margin-top: 120px;
+        margin-left: 30px;
+        border-bottom: none;
+        color: var(--secondary-color);
+    }
+    .weather-heading::after {
+        content: "\2600";
+        position: absolute;
+        top: -20px;
+        right: 70px;
+        z-index: 3;
+        margin-top: 17px;
+        font-size: 50pt;
+    }
+
+    .weather-table {
+        margin-top: 140px;
+        text-align: center;
+        margin-left: 30px;
+
+    }
+    .weather-table-container td, .weather-table-container th, .date-table td, .data-table th{
+        font-size: 18pt;
+        color: var(--secondary-color);
+    }
+    footer{
+        font-size: 15pt;
+        height: 100px;
+    }
+
+}
