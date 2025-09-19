@@ -99,6 +99,10 @@
         font-size: 18pt;
         color: var(--secondary-color);
     }
+
+    svg {
+        display: none;
+    }
     footer{
         font-size: 15pt;
         height: 100px;
