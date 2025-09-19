@@ -66,7 +66,7 @@
         top: 20px;
         left: 50px;
         margin-top: 150px;
-        height: 530px;
+        height: auto;
     }
     .weather-table-container {
         bottom: 3px;
@@ -75,8 +75,8 @@
     }
     .data-table  {
         margin-top: 120px;
-        margin-left: 30px;
         border-bottom: none;
+        text-align: center;
         color: var(--secondary-color);
     }
     .weather-heading::after {
@@ -95,7 +95,7 @@
         margin-left: 30px;
 
     }
-    .weather-table-container td, .weather-table-container th, .date-table td, .data-table th{
+    table th, table td, table tr{
         font-size: 18pt;
         color: var(--secondary-color);
     }
