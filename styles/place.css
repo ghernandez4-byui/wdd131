@@ -95,6 +95,7 @@ table td {
 table th {
     width: 50%;
     text-align: right;
+    text-decoration: underline;
 
 }
 
