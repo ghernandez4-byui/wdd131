@@ -2,9 +2,10 @@
     --primary-color: #5b103f;
     --secondary-color: #fad3ec;
     --accent1-color: #ef6dc0;
+    --secondary-rgb: rgb(250, 211, 236, .6);
     --accent2-color: #000;
-    --main-font: 'DynaPuff', sans-serif;
-    --body-font: 'Englebert', sans-serif;
+    --main-font: 'Permanent Marker', sans-serif;
+    --body-font: 'Roboto', sans-serif;
 }
 
 * {
@@ -13,19 +14,18 @@
 	box-sizing: border-box;
 }
 
-h1, h2, .header div {
+h1, h2 {
     font-family: var(--main-font);
-    text-align: center;
-    color: var(--primary-color);
+    color: var(--primary-color); 
 }
 
 body {
     font-family: var(--body-font);
+    border: 1px solid black;
 }
 
 header, footer {
     background-color: var(--accent1-color);
-
 }
 
 header {
@@ -35,10 +35,11 @@ header {
     height: auto;
 }
 
-.header div {
+h1 {
     display: flex;
     font-size: 30pt;
-    margin-left: 30px;
+    margin-left: 5px;
+    margin: 10px;
 }
 
 .menu {
@@ -74,7 +75,6 @@ header {
     font-size: 30pt;
     position: absolute;
     right: 10px;
-    
 }
 
 #hamburger::before {
@@ -84,7 +84,6 @@ header {
 #hamburger.open::before {
     content: "\00D7";
     color: var(--primary-color);
-    
 }
 
 .open a {
@@ -104,39 +103,41 @@ main {
     margin-bottom: 30px;
 }
 
-h1 {
-    font-size: 40pt;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
 h2 {
     font-family: var(--body-font);
-    font-size: 20pt;
-
+    font-size: 25pt;
 }
-main figure {
+.temples-gallery {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;  
     text-align: center;
-    margin: 20px;
-
+}
+.temples-gallery section {
+    background-color: var(--secondary-rgb);
+    width: 100%;
+    margin-bottom: 30px;
+    border: var(--secondary-color);
+    padding: 10px;
 }
 
-main figure img {
-    width: 200px;
+.temples-gallery h3 {
+    margin-bottom: 5px;
+    font-size: 16pt;
+}
+
+.label {
+    color: var(--primary-color);
+}
+.temples-gallery img {
+    width: 300px;
     height: auto;
-}
+    margin-top: 15px;
+    box-shadow: 0 0 10px 5px var(--primary-color);
 
-main figcaption {
-    margin-top: 10px;
-    font-size: 16px;
-    color: var(--accent2-color);
 }
 
 footer {
-    width: 100%;
     height: 80px;
     text-align: center;
     align-content: center;
