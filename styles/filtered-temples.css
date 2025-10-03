@@ -152,7 +152,7 @@ footer {
     }
 
     .temples-gallery img {
-        width: 400px;
+        width: auto;
         height: auto;
         display: block;
     }
@@ -161,8 +161,6 @@ footer {
         align-items: center;
         justify-content: space-between;
         height: 100px;
-
-        
     }
     h1 {
         margin-left: 50px;
